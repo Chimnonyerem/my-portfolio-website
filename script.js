@@ -37,14 +37,14 @@ load = () =>{
   
 }
 
-// document.getElementById('CV').addEventListener('click', function() {
-//     // URL of the PDF file
+document.getElementById('CV').addEventListener('click', function() {
+    // URL of the PDF file
     
-//     var pdfUrl = '/images/resume.pdf';
+    var pdfUrl = '/images/resume.pdf';
     
-//     // Open the PDF in a new tab
-//     window.open(pdfUrl, '_blank');
-// });
+    // Open the PDF in a new tab
+    window.open(pdfUrl, '_blank');
+});
 
 
 // document.getElementById('CV').onclick = function() {
