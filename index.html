@@ -39,7 +39,24 @@
        <div class="intro" id="home" class="hidden">
         <h1 class="name"> Hi, I'm MERCY</h1>
         <h1 id="me">A front end developer</h1>
-        <button id="CV">Resume</button>
+        <button  id="CV">Resume</button>
+
+        <!-- <div id="popup" class="popup">
+          <div class="popup-content">
+              <span id="closePopup" class="close">&times;</span>
+              <a href="/images/resume.pdf" download="document.pdf" class="download-btn">Download Document</a>
+          </div>
+      </div> -->
+
+    <!-- <div class="pdf-container" id="pdfContainer">
+        <iframe id="pdfViewer" class="pdf-viewer"></iframe>
+        <br>
+        <a id="downloadPdfBtn" href="/images/resume.pdf" download>Download PDF</a>
+    </div> -->
+  
+      <script src="scripts.js"></script>
+          
+        </div>
       </div>
       <!-- about me section -->
         <div id="about" class="hidden">
@@ -69,8 +86,8 @@
                   <h3>Fashion  Website</h3>
                   <p>This website helps peopls access all styles of clothes and order them just in the comfort of their home.</p>
                   <div class="buttons">
-                   <a target="" href="https://github.com/Chimnonyerem/fash_ion-website.git"><button>view project</button></a> 
-                    <button>view code</button>
+                   <a target="_blank" href=""><button>view project</button></a> 
+                    <a target="_blank" href="https://github.com/Chimnonyerem/fash_ion-website.git"><button>view code</button></a>
                   </div>
                 </div>
               </div>
@@ -80,8 +97,8 @@
                   <h3>Glassware Website</h3>
                   <p>This website helps people acces all kinds of glasses and easily order them anywhere in the world.</p>
                   <div class="buttons">
-                    <a href="https://github.com/Chimnonyerem/Glassware-website.git"><button>view project</button></a>
-                    <button>view code</button>
+                    <a target="_blank" href="https://glassware-website.vercel.app/  "><button>view project</button></a>
+                    <a target="_blank" href="https://github.com/Chimnonyerem/Glassware-website.git"><button>view code</button></a>
                   </div>
                 </div>
               </div>
@@ -90,8 +107,8 @@
                 <h3>Education Website</h3>
                 <p>This website helps to teach students of all levels with simple terminologies to help them perform better at school.</p>
                 <div class="buttons">
-                  <button>view project</button>
-                  <button>view code</button>
+                  <a target="_blank" href=""><button>view project</button></a>
+                  <a target="_blank" href=""><button>view code</button></a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -99,17 +116,17 @@
                 <h3>E-commerce website Website</h3>
                 <p>This website helps consumers to access quality products and order them from the confort of their homes</p>
                 <div class="buttons">
-                  <button>view project</button>
-                  <button>view code</button>
-                </div>
+                  <a target="_blank" href=""><button>view project</button></a>
+                  <a target="_blank" href=""><button>view code</button></a>
+                </div>            
               </div>
               <div class="swiper-slide">
               <img src="/images/git hub web.jpg" alt="" class="projectImage">
                   <h3>Git Hub Training  Website</h3>
                 <p>This website helps to train  programmers  to use git hub effectively.</p>
                 <div class="buttons">
-                  <a href=""><button>view project</button></a>
-                  <button>view code</button>
+                  <a target="_blank" href=""><button>view project</button></a>
+                 <a target="_blank" href=""><button>view code</button></a> 
                 </div>
               </div>
             </div>
@@ -129,7 +146,7 @@
                 <!-- <li></li> -->
                 <div>
                   <img src="/images/html image.png" alt="html">
-                  <p style="font-size: 20px;">HTML</p>
+                  <!-- <p style="font-size: 20px;">HTML</p> -->
                 </div>
                 <div class="parent1">
                   <div class="child1">
@@ -142,7 +159,7 @@
                 <!-- <li></li> -->
                 <div>
                   <img src="/images/CSS image.svg" alt="html">
-                    <p style="font-size: 20px;">CSS</p>
+                    <!-- <p style="font-size: 20px;">CSS</p> -->
                 </div>
                 <div class="parent1">
                   <div class="child2">
@@ -155,7 +172,7 @@
                 <!-- <li></li> -->
                 <div>
                 <img src="/images/js image.jfif" alt="html">
-                <p style="font-size: 20px;">Java script</p>
+                <!-- <p style="font-size: 20px;">Java script</p> -->
                 </div>
                 <div class="parent1">
                   <div class="child3">
@@ -168,7 +185,7 @@
                 <!-- <li></li> -->
                 <div>
                   <img  src="/images/responsiveness.jfif" alt="html">
-                  <p style="font-size: 20px;">Resposive web design</p>
+                  <!-- <p style="font-size: 20px;">Resposive web design</p> -->
                 </div>
                 <div class="parent1">
                   <div class="child4">
@@ -239,27 +256,29 @@
             <!-- form -->
             <form  id="formDetail" name="input" >
               <h2 class="requestText">Request form</h2>
-              
+              <div class="myName">
+                <input name="myName" type="text" style="color: black;" value="Chimnonyerem" >
+              </div>
               <div class="input">
                 <label style="color: white;" for="">Name:</label>
-                <input type="text" placeholder="Fullname" > <br>
+                <input  name="      " type="text" placeholder=" Enter Fullname" > <br>
               </div>
 
               <div class="input">
                 <label style="color: white;" for="">Phone number:</label>
-                <input type="email" placeholder="email" > <br>
+                <input name="phoneNo" type="tel" placeholder=" Enter Phone number" > <br>
               </div>
 
               <div class="input">
-                <label style="color: white;" for="">Residence:</label>
-                <input type="text" placeholder="Residence"> <br>
+                <label style="color: white;" for="">email:</label>
+                <input name="email" type="email" placeholder=" Enter email" > <br>
               </div>
 
              <div class="input">
               <label style="color: white;" for="">Service you need:</label>
-              <textarea name="" id="" placeholder="How may I help you?" cols=""></textarea><br>
+              <textarea name="message" id="" placeholder="How may I help you?" cols=""></textarea><br>
              </div>
-              <button id="submit">Submit</button>
+              <button id="submit" type="submit">Submit</button>
             </form>
           </div>
           <h1 class="closingText">Don't stop building!</h1>
@@ -269,5 +288,7 @@
     </main>
 </body>
 <script src="script.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="form.js"></script>
 </html>
 
