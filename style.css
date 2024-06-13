@@ -831,9 +831,17 @@ header{
         display: block;
       }
 
+      .projectDis h3{
+        font-size: 13px;
+      }
+
+      .projectDis p{
+        font-size: 9px;
+      }
+
       /* skill section */
      .skillDetail{
-        font-size: 15px;
+        font-size: 9px;
      }
 
      .skillText{
@@ -880,6 +888,7 @@ header{
       width: 75%;
       position: absolute;
      }
+
 
 
        /* contact section  */
