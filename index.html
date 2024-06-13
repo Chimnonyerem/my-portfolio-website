@@ -16,17 +16,23 @@
           <img src="/images/mercy_image-removebg.png" alt="" width="100px">
       <div class="headerRight">
         <!-- nav -->
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About me</a>
-          <a href="#project">My projects</a>
-          <a href="#skill">My skill</a>
-          <a href="#contact">Contact me</a>
-      </nav>
-      <div>
-        
-      </div>
-      <button id="meetMe" onclick="button()">Meet me</button>
+         <div class="navLinks">
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About me</a>
+            <a href="#project">My projects</a>
+            <a href="#skill">My skill</a>
+            <a href="#contact">Contact me</a>
+        </nav>
+        <div class="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+         </div>
+       
+
+      <button id="learnMore">Learn more</button>
     <!-- </div> -->
       </div>
     </header>
@@ -75,7 +81,93 @@
           </div><br>
         </div>
 
+
         <!-- project section -->
+         <div id="project" class="hidden">
+           <h1 class="projectText">MY PROJECTS</h1>
+           <div class="slider">
+             <button id="button" class="prev">&#10094;</button>
+             <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slide">
+                      <img src="/images/fashion_training_img.png" alt="" class="projectImage">
+                      <div class="projectDis">
+                           <h3>Fashion Training website</h3>
+                          <p>This is a website that trains its users on how to make clothes with high quality designs.</p>
+                          <div class="buttons">
+                           <a target="_blank" href=""><button>view project</button></a> 
+                           <a target="_blank" href="https://github.com/Chimnonyerem/fashion_training_website.git"><button>view code</button></a>
+                        </div>
+                      </div>
+                          
+                    </div>
+                    <div class="slide">
+                      <img src="/images/glassware.png" alt="" class="projectImage">
+                      <div class="projectDis">
+                        <h3>Glassware Website</h3>
+                        <p>This website helps people acces all kinds of glasses and easily order them anywhere in the world.</p>
+                        <div class="buttons">
+                          <a target="_blank" href="https://glassware-website.vercel.app/  "><button>view project</button></a>
+                          <a target="_blank" href="https://github.com/Chimnonyerem/Glassware-website.git"><button>view code</button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="/images/education.png" alt="" class="projectImage">
+                      <div class="projectDis">
+                         <h3>Education Website</h3>
+                         <p>This website helps to teach students of all levels with simple terminologies to help them perform better at school.</p>
+                         <div class="buttons">
+                           <a target="_blank" href="https://education-website-neon.vercel.app/"><button>view project</button></a>
+                           <a target="_blank" href="https://github.com/Chimnonyerem/education_website.git"><button>view code</button></a>
+                         </div>
+                      </div>
+                     
+                    </div>
+  
+                    <div class="slide">
+                      <img src="/images/quizweb_img.png" alt="" class="projectImage">
+                      <div class="projectDis">
+                         <h3>Quiz-training Website</h3>
+                         <p>This website provides all quiz questions  to help its users train themselves theoritically in their respective fields.</p>
+                         <div class="buttons">
+                            <a target="_blank" href="https://quize-website.vercel.app/"><button>view project</button></a>
+                            <a target="_blank" href="https://github.com/Chimnonyerem/quize_website.git"><button>view code</button></a>
+                          </div>
+                      </div>
+                    </div>
+  
+                    <div class="slide">
+                      <img src="/images/Screenshot (1).png" alt="" class="projectImage">
+                      <div class="projectDis">
+                        <h3>Fashion  Website</h3>
+                        <p>This website helps peopls access all styles of clothes and order them just in the comfort of their home</p>
+                        <div class="buttons">
+                          <a target="_blank" href="https://pick-your-style-website.vercel.app/"><button>view project</button></a>
+                          <a target="_blank" href="https://github.com/Chimnonyerem/pick_your_style_website.git"><button>view code</button></a>
+                        </div>  
+                      </div>
+                      
+                    </div>
+                    <!-- <div class="slide">
+                      <img src="/images/git hub web.jpg" alt="" class="projectImage">
+                      <div class="projectDis">
+                        <h3>Git Hub Training  Website</h3>
+                        <p>This website helps to train  programmers  to use git hub effectively.</p>
+                        <div class="buttons">
+                          <a target="_blank" href=""><button>view project</button></a>
+                          <a target="_blank" href=""><button>view code</button></a> 
+                        </div>
+                      </div>
+                    </div> -->
+                </div>
+              </div>
+              <button  id="button" class="next">&#10095;</button>
+            </div>
+          </div>
+        
+
+        <!-- project section
         <div id="project" class="hidden">
           <h1 class="projectText">MY PROJECTS</h1>
           <div class="swiper">
@@ -144,7 +236,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-pagination"></div>
           </div>
-        </div>
+        </div> -->
 
         <!-- skill section -->
        <div id="skill" class="hidden">
@@ -153,27 +245,23 @@
           <!-- HTML -->
             <ul class="skillDetail">
               <div class="skillDetail1">
-                <!-- <li></li> -->
                 <div>
                   <img src="/images/html image.png" alt="html">
-                  <!-- <p style="font-size: 20px;">HTML</p> -->
                 </div>
                 <div class="parent1">
                   <div class="child1">
-                    <p style="padding-left: 82%; font-size: 20px; padding-top: 5px;">90%</p>
+                    <p class="skillP">90%</p>
                   </div>
                 </div>
               </div>
                <!-- CSS -->
               <div class="skillDetail1">
-                <!-- <li></li> -->
                 <div>
                   <img src="/images/CSS image.svg" alt="html">
-                    <!-- <p style="font-size: 20px;">CSS</p> -->
                 </div>
                 <div class="parent1">
                   <div class="child2">
-                    <p style="padding-left: 80%; font-size: 20px; padding-top: 5px;">80%</p>
+                    <p class="skillP">80%</p>
                   </div>
                 </div>
               </div>
@@ -186,7 +274,7 @@
                 </div>
                 <div class="parent1">
                   <div class="child3">
-                    <p style="padding-left: 75%; font-size: 20px; padding-top: 5px;">65%</p>
+                    <p class="skillP">65%</p>
                   </div>
                 </div>
               </div>
@@ -199,7 +287,7 @@
                 </div>
                 <div class="parent1">
                   <div class="child4">
-                    <p style="padding-left: 75%; font-size: 20px; padding-top: 5px;">75%</p>
+                    <p class="skillP">75%</p>
                   </div>
                 </div>
               </div>
@@ -223,7 +311,9 @@
                 </div>
                 <!-- email -->
                 <div class="detail1">
-                  <h3>email</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>
                     <a href="" target="_blank">nonyeroya100l@gmail.com</a>
                 </div>
               </div>
@@ -271,7 +361,7 @@
               </div>
               <div class="input">
                 <label style="color: white;" for="">Name:</label>
-                <input  name="      " type="text" placeholder=" Enter Fullname" > <br>
+                <input  name="myName" type="text" placeholder=" Enter Fullname"><br>
               </div>
 
               <div class="input">
@@ -284,7 +374,7 @@
                 <input name="email" type="email" placeholder=" Enter email" > <br>
               </div>
 
-             <div class="input">
+             <div id="textArea" class="input">
               <label style="color: white;" for="">Service you need:</label>
               <textarea name="message" id="" placeholder="How may I help you?" cols=""></textarea><br>
              </div>
